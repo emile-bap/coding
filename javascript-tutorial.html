@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn JavaScript to make your web pages interactive">
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CodeTutorials</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html-tutorial.html">HTML</a></li>
+                <li><a href="css-tutorial.html">CSS</a></li>
+                <li><a href="javascript-tutorial.html">JavaScript</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <h2>JavaScript Basics</h2>
+            <p>JavaScript is a programming language that allows you to make your web pages interactive. It can be used to validate forms, create animations, and handle events.</p>
+        </section>
+
+        <section class="content">
+            <h3>JavaScript Example</h3>
+            <p>Here’s a simple example of JavaScript that changes text when a button is clicked:</p>
+            <pre>
+                <code>
+                &lt;button onclick="changeText()"&gt;Click Me&lt;/button&gt;
+                &lt;p id="demo"&gt;Hello World&lt;/p&gt;
+
+                &lt;script&gt;
+                    function changeText() {
+                        document.getElementById("demo").innerHTML = "You clicked the button!";
+                    }
+                &lt;/script&gt;
+                </code>
+            </pre>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CodeTutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn CSS from the basics to advanced styling techniques.">
+    <title>CSS Tutorial - CodeTutorials</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CodeTutorials</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html-tutorial.html">HTML</a></li>
+                <li><a href="css-tutorial.html">CSS</a></li> <!-- Active Link -->
+                <li><a href="javascript-tutorial.html">JavaScript</a></li>
+                <li><a href="php-tutorial.html">PHP</a></li>
+                <li><a href="tutorials.html">Tutorials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>CSS Basics</h2>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages. With CSS, you can change colors, fonts, layouts, and even create animations for HTML elements.</p>
+        </section>
+
+        <section class="content">
+            <h3>CSS Syntax</h3>
+            <p>CSS is written in the format: <code>selector { property: value; }</code></p>
+            <pre>
+                <code>
+h1 {
+    color: blue;
+    text-align: center;
+}
+                </code>
+            </pre>
+            <p>In this example, we are selecting the <code>h1</code> tag and changing its <code>color</code> and <code>text-align</code>.</p>
+        </section>
+
+        <section class="content">
+            <h3>Selecting Elements</h3>
+            <p>You can style different elements in HTML by using selectors:</p>
+            <ul>
+                <li><strong>Type Selector:</strong> Targets all elements of a particular type (e.g., <code>p</code> selects all paragraphs).</li>
+                <li><strong>Class Selector:</strong> Targets elements with a specific class (e.g., <code>.classname</code> selects all elements with the class "classname").</li>
+                <li><strong>ID Selector:</strong> Targets a single element with a specific ID (e.g., <code>#idname</code> selects the element with the ID "idname").</li>
+            </ul>
+        </section>
+
+        <section class="content">
+            <h3>CSS Box Model</h3>
+            <p>The CSS Box Model describes how each element on a web page is structured. It consists of:</p>
+            <ul>
+                <li><strong>Content:</strong> The actual content of the box, where text and images appear.</li>
+                <li><strong>Padding:</strong> The space between the content and the border.</li>
+                <li><strong>Border:</strong> A border surrounding the padding and content.</li>
+                <li><strong>Margin:</strong> The space outside the border, separating the element from other elements.</li>
+            </ul>
+            <pre>
+                <code>
+.box {
+    width: 300px; 
+    padding: 20px; 
+    border: 5px solid black; 
+    margin: 15px;  
+}
+                </code>
+            </pre>
+        </section>
+
+        <section class="content">
+            <h3>Responsive Design with Media Queries</h3>
+            <p>Media queries allow you to apply CSS styles based on the screen size or device type. For example:</p>
+            <pre>
+                <code>
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+                </code>
+            </pre>
+            <p>This rule changes the background color of the body to light blue when the screen is 600 pixels or smaller.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CodeTutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>
